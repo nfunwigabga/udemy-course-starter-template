@@ -11,15 +11,23 @@ The course starts with users pulling in this boilerplate. The Laravel (backend) 
 
 ### Usage
 Clone the repo
-`git clone git@github.com:nfunwigabga/udemy-course-starter-template.git`
+```
+git clone git@github.com:nfunwigabga/udemy-course-starter-template.git
+```
 
 Install the composer packages
-`composer update`
+```
+composer update
+```
 
 Install the node packages
-`npm install`
+```
+npm install
+```
 
 Compile the dev dependencies
-`npm run dev`
+```
+npm run dev
+```
 
 Your script is now setup and ready to start the course. 
