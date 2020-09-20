@@ -155,7 +155,10 @@ function resolveComponents(components) {
 function getMiddleware(components) {
     const middleware = [...globalMiddleware]
 
-    components.filter(c => c.middleware).forEach(component => {
+    // modified to match multiple nesting levels
+    const filteredComs = components.filter(c => typeof c !== 'undefined')
+
+    filteredComs.filter(c => c.middleware).forEach(component => {
         if (Array.isArray(component.middleware)) {
             middleware.push(...component.middleware)
         } else {
